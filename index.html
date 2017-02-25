@@ -75,42 +75,52 @@
           <fieldset>
             <legend>Item Details</legend>
               <aside>
-                <label>Item Type</label>
-                  <input>
+                <label for='item-type'>Item Type</label>
+                  <select name='item-type' id='item-type'>
+                    <option value='Widget-Selection'>Select A Widget</option>
+                    <option value='Great-Widget'>Great Widget</option>
+                    <option value='Awesome-Widget'>Awesome Widget</option>
+                    <option value='Widget-of-Cool'>Widget of Cool</option>
+                    <option value='Amazing-Widget'>Amazing Widget</option>
+                    <option value-'Widget-of-Sweetness'>Widget of Sweetness</option>
+                  </select>
               </aside>
               <aside>
-                <label>Quantity</label>
-                  <input type='number' name='item-quantity' id='quantity'>
+                <label for='quantity'>Quantity</label>
+                  <input type='number' name='item-quantity' id='quantity' min='0' required>
               </aside>
               <aside>
                 <h4>Gift Wrap?</h4>
-                <label>No</label>
-                  <input>
-                <label>Yes</label>
-                  <input>
+                <input type='radio' name='gift-wrap' value='no' id='no'>
+                  <label for='no'>No</label>
+                <input type='radio' name='gift-wrap' value='yes' id='yes'>
+                  <label for='yes'>Yes</label>
               </aside>
           </fieldset>
           <fieldset>
             <legend>Your Info</legend>
               <aside>
                 <label for='full-name'>Full Name</label>
-                  <input type='text' name='full-name' id='full-name' placeholder='Jordan Kasper'>
+                  <input type='text' name='full-name' id='full-name' placeholder='Jordan Kasper' required>
               </aside>
               <aside>
                 <label for='email'>Email</label>
-                  <input type='email' name='email' id='email' placeholder='jordan@joe.com'>
+                  <input type='email' name='email' id='email' placeholder='jordan@joe.com' required>
               </aside>
               <aside>
-                <label>Credit Card</label>
-                  <input>
+                <label for='credit-card'>Credit Card</label>
+                  <input type='text' name='credit-card' id='credit-card' placeholder='xxxx-xxxx-xxxx-xxxx' required>
               </aside>
               <aside>
                 <label for='expiration-date'>Expiration</label>
-                  <input type='date' name='expiration-date' id='expiration-date'>
+                  <input type='date' name='expiration-date' id='expiration-date' required>
               </aside>
+
           </fieldset>
+
+          <input type='submit' name='confirm-order' value='confirm-order'>
+
         </form>
-        <button>Confirm Order</button>
     </main>
     <footer>
       <h4>2017 The Iron Yard Students</h4>
