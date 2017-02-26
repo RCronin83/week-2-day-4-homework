@@ -1,0 +1,25 @@
+.aboutUs {
+  align-items: center;
+    h2 {
+      text-align: center;
+    }
+    p {
+      margin: 2em;
+    }
+    h3 {
+      text-align: center;
+    }
+    section {
+      display: flex;
+      justify-content: space-between;;
+      flex-wrap: wrap;
+      width: 90%;
+      margin: auto;
+
+    }
+    img {
+      margin-top: 1em;
+      height: 33%;
+      width: 33%;
+    }
+}
