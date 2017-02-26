@@ -1,0 +1,29 @@
+body {
+  padding-top: 50px;
+}
+
+
+.headerNavBar {
+  display: flex;
+  justify-content: space-between;
+  background-color: #000000;
+  color: #ffffff;
+  .menuIcon {
+    margin: 1em;
+    a {
+      color: #ffffff;
+    }
+  }
+  .menu {
+    position:absolute;
+    top:100%;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.2s linear;
+    list-style: none;
+    background-color: #000000;
+  }
+  .menuIcon:hover ~ .menu {
+    opacity: 1;
+  }
+}
