@@ -6,9 +6,10 @@
   <link href='normalize.css' rel='stylesheet'>
   <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet'>
   <link href='style.css' rel='stylesheet'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
 </head>
 <body>
-  <header>
+  <!-- <header>
     <main class='mobileNavBar'>
       <h1>Widget Co</h1>
       <aside class='menuBar'><a href='' class='glyphicon glyphicon-menu-hamburger'></a></aside>
@@ -24,8 +25,8 @@
       <p>We have the best widgets. They're amazing. You'll love them.</p>
       <aside class='headerOrderButton'><button>Place your Order Now!</button></aside>
     </main>
-  </header>
-  <main id='aboutUs'>
+  </header> -->
+  <main class='aboutUs' id='aboutUs'>
     <h2>Leading Producer of Widgets</h2>
     <p>Herp deprsum terp mer derpler deperker dep pee peprpe, merp, herdered.
       Der ner terp herpde[ermer seper me mer nerhsn tee pee perm enejnjeeneje
@@ -90,12 +91,12 @@
         </nav>
         <a href='index.html' class='glyphicon glyphicon-menu-up'>go to top</a>
       </main>
-      <main id='placeOrder'>
+      <main class='placeOrder' id='placeOrder'>
         <h2>Place Your Order</h2>
         <form action='http://requestb.in/1cy7snt1' method='post'>
-          <fieldset>
+          <fieldset class='itemDetails'>
             <h3>Item Details</h3>
-            <aside>
+            <aside class='itemType'>
               <label for='item-type'>Item Type</label>
               <select name='item-type' id='item-type'>
                 <option value='Widget-Selection'>Select A Widget</option>
@@ -108,9 +109,9 @@
             </aside>
             <aside>
               <label for='quantity'>Quantity</label>
-              <input type='number' name='item-quantity' id='quantity' min='0' required>
+              <input type='number' name='item-quantity' id='quantity' min='0'/>
             </aside>
-            <aside>
+            <aside class='giftWrap'>
               <h4>Gift Wrap?</h4>
               <input type='radio' name='gift-wrap' value='no' id='no'>
               <label for='no'>No</label>
@@ -118,23 +119,23 @@
               <label for='yes'>Yes</label>
             </aside>
           </fieldset>
-          <fieldset>
+          <fieldset class='yourInfo'>
             <h3>Your Info</h3>
-            <aside>
+            <aside class='fullName'>
               <label for='full-name'>Full Name</label>
               <input type='text' name='full-name' id='full-name' placeholder='Jordan Kasper' required>
             </aside>
-            <aside>
+            <aside class='email'>
               <label for='email'>Email</label>
               <input type='email' name='email' id='email' placeholder='jordan@joe.com' required>
             </aside>
-            <aside>
+            <aside class='creditCard'>
               <label for='credit-card'>Credit Card</label>
               <input type='text' name='credit-card' id='credit-card' placeholder='xxxx-xxxx-xxxx-xxxx' required>
             </aside>
             <aside>
               <label for='expiration-date'>Expiration</label>
-              <input type='date' name='expiration-date' id='expiration-date' required>
+              <input class='expiration' type='date' name='expiration-date' id='expiration-date' required>
             </aside>
 
           </fieldset>

@@ -12,8 +12,9 @@ header {
     header .mobileNavBar aside {
       font-size: 3em;
       margin: 0.3em; }
-      header .mobileNavBar aside a:hover .mobileMenuDropdown {
-        opacity: 1; }
+
+a:hover .mobileMenuDropdown {
+  opacity: 1; }
 
 .mobileMenuDropdown {
   position: absolute;
@@ -42,5 +43,55 @@ header {
     margin: 0.5em;
     padding: 0.5em;
     justify-content: center; }
+
+.aboutUs {
+  align-items: center; }
+  .aboutUs h2 {
+    text-align: center; }
+  .aboutUs p {
+    margin: 2em; }
+  .aboutUs h3 {
+    text-align: center; }
+
+.placeOrder {
+  background-color: #ffddcc; }
+  .placeOrder h2 {
+    text-align: center; }
+
+fieldset {
+  border: 1px solid #337ab7;
+  margin: 1em;
+  border-radius: 1em;
+  background-color: #ffffff; }
+  fieldset h3 {
+    text-align: center;
+    background-color: #337ab7;
+    color: #ffffff;
+    margin: 0; }
+  fieldset aside {
+    padding: 1em; }
+
+.itemType {
+  display: flex;
+  flex-direction: column; }
+  .itemType select {
+    border: 1px solid grey;
+    width: auto; }
+
+.giftWrap {
+  display: flex;
+  vertical-align: middle; }
+
+.fullName {
+  display: flex;
+  flex-direction: column; }
+
+.email {
+  display: flex;
+  flex-direction: column; }
+
+.creditCard {
+  display: flex;
+  flex-direction: column; }
 
 /*# sourceMappingURL=style.css.map */

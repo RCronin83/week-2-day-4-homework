@@ -1,0 +1,49 @@
+.placeOrder {
+  background-color: #ffddcc;
+
+  h2 {
+    text-align: center;
+
+  }
+}
+
+fieldset {
+  border: 1px solid #337ab7;
+  margin: 1em;
+  border-radius: 1em;
+  background-color: #ffffff;
+  h3 {
+    text-align: center;
+    background-color: #337ab7;
+    color: #ffffff;
+    margin: 0;
+  }
+  aside {
+    padding: 1em;
+  }
+}
+
+.itemType {
+  display: flex;
+  flex-direction: column;
+  select {
+    border: 1px solid grey;
+    width: auto;
+  }
+}
+.giftWrap {
+  display: flex;
+  vertical-align: middle;
+}
+.fullName {
+  display:flex;
+  flex-direction:column;
+}
+.email {
+  display: flex;
+  flex-direction: column;
+}
+.creditCard {
+  display: flex;
+  flex-direction: column;
+}
